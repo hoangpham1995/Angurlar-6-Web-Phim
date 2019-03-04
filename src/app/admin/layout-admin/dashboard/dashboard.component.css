@@ -1,0 +1,29 @@
+.nut_buttoin button{
+    padding: 4px 80px;
+   
+}
+
+.table_user h2
+{
+    background: #F2F2F2;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.nut_buttoin{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.right_text .item{
+
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+.right_text .item p{
+    font-size: 28px;
+    margin: 0px
+}

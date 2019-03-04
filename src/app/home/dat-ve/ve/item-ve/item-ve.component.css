@@ -1,0 +1,14 @@
+
+.form-control{
+    display: inline-block;
+}
+
+.bg_nut{
+    background-color: #47251C;
+}
+.nut input{
+    margin: 0px 10px;
+}
+.nut span{
+    cursor: pointer;
+}

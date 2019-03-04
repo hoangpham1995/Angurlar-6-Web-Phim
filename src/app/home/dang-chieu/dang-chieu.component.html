@@ -1,0 +1,15 @@
+
+
+<owl-carousel-o [options]="customOptions">
+
+        <div class="item" *ngFor="let phim of DanhSachPhim">
+        <ng-template carouselSlide [id]="phim.id">
+                <app-item-phim [ItemFim]="phim" ></app-item-phim>
+        </ng-template>
+        </div>
+
+</owl-carousel-o>    
+
+
+
+

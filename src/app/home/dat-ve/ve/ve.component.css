@@ -1,0 +1,39 @@
+.wapper{
+    margin-top: 50px;
+    background: #F26B38;
+    padding: 20px;
+}
+.form-control{
+    display: inline-block;
+}
+.table{
+    margin: 0px;
+}
+.bg_mau{
+    background-color: #F9F9F9!important;
+    line-height: 3;
+}
+.bg_nut{
+    background-color: #47251C;
+}
+.nut input{
+    margin: 0px 10px;
+}
+.bg_text{
+    display: flex;
+    justify-content: space-between;
+}
+.thanhtoan{
+    margin-top: 50px;
+    padding: 20px;;
+    background-color: #F1F1F1;
+
+}
+.degin p{
+    border-bottom: 1px solid #CED0DA;
+    padding-bottom: 10px;
+}
+
+.degin p:last-child{
+    border: none;
+}

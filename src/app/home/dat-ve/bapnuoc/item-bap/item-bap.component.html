@@ -1,0 +1,16 @@
+<th class="bg_text" >
+       
+  <div class="deg" >
+    <b>{{dsbap.Combo}}</b>
+    <p style="font-size: 12px;"></p>
+  </div>
+</th>
+<td>
+  <div class="nut">
+    <span (click)="giam()" ><i class="fa fa-minus"></i></span>
+    <input type="text" class="form-control text-center" [value]="dsbap.quantity" style="width: 60px">
+    <span (click)="tang()" ><i class="fa fa-plus"></i></span>
+  </div>
+</td>
+<td>{{dsbap.Gia}} đ</td>
+<td style="color: red">{{dsbap.quantity*dsbap.Gia}} đ</td>

@@ -1,0 +1,12 @@
+
+    <th  >{{dsve.LoaiPhim}}</th>
+    <td>
+      <div class="nut">
+        <span (click)="giam()" ><i class="fa fa-minus"></i></span>
+        <input disabled type="text" class="form-control text-center" [value]="dsve.quantity" style="width: 60px">
+        <!-- <span>{{dsve.quantity}}</span> -->
+        <span (click)="tang()"  ><i class="fa fa-plus"></i></span>
+      </div>
+    </td>
+    <td>{{dsve.Gia}} đ</td>
+    <td style="color: red">{{dsve.quantity*dsve.Gia}}đ</td>

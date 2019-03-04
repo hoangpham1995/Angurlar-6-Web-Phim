@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.btn.focus,.btn:focus{
+    box-shadow:0 0 0 0.0rem!important;
+}
+  
+.owl-prev{
+    position: absolute;
+    top: 30%;
+    left: -2%;
+    background: url('./assets/img/controls-3.png') no-repeat 0px 0;
+    width: 46px;
+    height: 46px;
+    z-index: 99;
+   
+}
+
+.owl-prev:hover{
+    background: url('./assets/img/controls-3.png') no-repeat 0px -46px;
+    z-index: 99;
+}
+.owl-next:hover{
+    background: url('./assets/img/controls-3.png') no-repeat -46px -46px;
+    z-index: 99;
+}
+
+.owl-next{
+    position: absolute;
+    top: 30%;
+    right:-2%;
+    background: url('./assets/img/controls-3.png') no-repeat -46px 0;
+    width: 46px;
+    height: 46px;
+    z-index: 99;
+
+}
+

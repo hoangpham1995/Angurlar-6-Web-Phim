@@ -1,0 +1,24 @@
+
+.btn {
+  border: 2px solid #f44336;
+  background-color: white;
+  color: red;
+  padding: 10px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.danger {
+  background: #f44336;
+  color: white;
+  }
+
+
+.nut button{
+  margin: 50px 10px;
+}
+.active {
+  background: #f44336;
+  color: white;
+}
+
+

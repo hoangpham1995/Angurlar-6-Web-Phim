@@ -1,0 +1,100 @@
+.even{
+    width: 100%;
+    text-align: center;
+
+}
+.even_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.even_1 a{
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.even_1 a li.active{
+    color: red;
+}
+.even_1 a li:hover{
+    font-size: 28px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.even_1 .danger {
+    background: #f44336;
+    color: white;
+}
+.even ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.even ul li{
+ 
+    
+    list-style: none;
+}
+.even_1 button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    border: 2px solid #f44336;
+    background-color: white;
+    color: red;
+    padding: 8px 28px;
+    font-size: 16px;
+}
+
+.dienanh img {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.dienanh a.nut_a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px; 
+}
+.dienanh a p{
+    padding-top: 10px;
+}
+.dienanh  p.nut_p{
+    font-size: 13px;
+}
+.hinhanh_1 img{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.dien_anh_2 .nut_b p{
+    font-size: 13px;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.dien_anh_2 a{
+    text-decoration: none;
+    color: black;
+}
+.dienanh a:hover,.dien_anh_2 a:hover{
+    color: red;
+}
+
+
+
+@media only screen and (max-width: 576px){
+
+    .even_1{
+        display: inline-block;
+    };
+  
+}

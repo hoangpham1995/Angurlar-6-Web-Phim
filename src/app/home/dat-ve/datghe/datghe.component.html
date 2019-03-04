@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="cuon">
+      <div class="row">
+    <div class="col-md-12 ">
+      <div class="noidung_hienthi">
+           <div class="hien_thi">
+            <button></button>
+            <span>Ghế Trống</span>
+          </div>
+          <div class="hien_thi">
+            <button style="background-color:#DB3444 ;border: none"></button>
+            <span>Ghế Đã Có Người</span>
+          </div>
+            <div class="hien_thi">
+              <button style="background-color: #28A745;border: none"></button>
+              <span>Ghế Đã Chọn</span>
+            </div>
+
+      </div>
+
+   
+
+
+     
+<div class="noidung_ghe">
+  <div class="sceen text-center">
+    <p>Màn Hình</p>
+    
+  </div>
+
+ <div class="row mx-auto ">
+       
+
+
+        <div class="col-md-6 col-xs-6 mx-auto " >
+           <div class="hang_ghe" >
+              <app-ghe *ngFor="let danhsachghe of DanhSachGheNgoi" (emitGhe)="datGheParent($event,ghe)" [itemghe] = danhsachghe ></app-ghe>
+            </div>
+          
+          
+        </div>
+
+
+
+
+  
+
+      </div>
+
+
+
+      <div class="thanhtoan" style="text-align: right ;">
+        <button class="btn btn-light mr-2" (click)="QuayLai()" ><i class="fa fa-long-arrow-left pr-2" ></i>Quay Lại</button>
+        <button class="btn" data-toggle="modal" data-target="#exampleModal">Thanh Toán</button>
+      </div>
+
+
+          <app-thanhtoan></app-thanhtoan>
+        
+       
+      </div>
+
+   
+      
+   
+    </div>
+  </div>
+  </div>
+
+</div>

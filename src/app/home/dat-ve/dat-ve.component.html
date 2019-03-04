@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 col-xs-12">
+
+      <div class="feet_link">
+        <div class="bg_menu">
+          <ul>
+            <li>Chọn Vé/Bắp Nước</li>
+            <li>Đặt Ghế</li>
+            <li>Thanh Toán</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="danhsach" *ngIf="status; else templateGhe">
+        <div class="wapper">
+          <h4 class=" text-white" style="margin-bottom: 20px;">Chọn Vé /Thức Ăn</h4>
+          <div class="loaive">
+
+            <app-ve ></app-ve>
+
+            <app-bapnuoc></app-bapnuoc>
+
+          </div>
+
+        </div>
+
+        <div class="datghe">
+          <button class="btn" (click)="AnGhe()" >Đặt Ghế</button>
+        </div>
+
+      </div>
+
+
+
+<ng-template #templateGhe>
+      <app-datghe (itemQuay)="HienGhe($event)" ></app-datghe>
+</ng-template>
+
+    </div>
+
+
+
+    <div class="col-md-3 col-xs-12"     >
+     
+      <div class="thanhtoan "  >
+          <div class="times">   
+              <p>4:30</p>
+            </div>
+        <img [src]="ChiTietPhim.HinhAnh" alt="" class="img-fluid">
+        <div class="degin">
+          <h4 class="text-center" style="padding: 10px 0px">{{ChiTietPhim.TenPhim}}</h4>
+          <p><b style="color: #c11827">{{MaPhim.Rap.TenRap}}</b></p>
+          <p><b>Ngày:<span style="margin-left: 5px;color: red">{{MaPhim.NgayChieuGioChieu | date:'dd-MM-yyyy'}}</span> </b></p>
+          <p><b>Suất:<span style="margin-left: 5px;color: red">{{MaPhim.NgayChieuGioChieu | date:'HH:mm' }}</span> </b></p>
+          <p><b>Combo:</b></p>
+          <p><b>Ghế:</b></p>
+  
+     
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

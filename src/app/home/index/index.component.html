@@ -1,0 +1,28 @@
+<div class="container">
+       <div class="nut text-center">
+               <button class="btn  "[ngClass]="{'danger':dangChieuStatus}" (click)="HienPhimDangChieu()">Đang Chiếu</button>
+
+               <button class="btn " [ngClass]="{'danger':!dangChieuStatus}"  (click)="HienPhimSapChieu()">Sắp Chiếu</button>
+       </div>
+
+       <div *ngIf="dangChieuStatus;else phimSapChieu" >
+        <app-dang-chieu></app-dang-chieu> 
+       </div>
+
+       <ng-template #phimSapChieu>
+             <div>
+                  <app-sap-chieu></app-sap-chieu>   
+                </div>    
+       </ng-template>
+       
+     
+   
+
+     
+
+
+
+
+
+
+</div>

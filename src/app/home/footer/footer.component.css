@@ -1,0 +1,79 @@
+.center{
+    background: black ;
+    width: 100%;
+
+    padding: 40px 0px;
+}
+.logo li{
+    font-size: 20px;
+  
+    padding: 30px 15px;
+ 
+}
+.logo li a{
+    color: white;
+}
+.logo li a:hover{
+    color: red;
+}
+p{
+    color: #b7b7b7
+}
+.footer_url{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    text-transform: uppercase;
+}
+.footer_url ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.footer_url p{
+    font-size: 18px;
+    color: white;
+}
+.footer_url ul li a{
+    text-decoration: none;
+    color: #a0a3a7;
+    font-size: 12px;
+}
+.connect span i{
+    text-decoration: none;
+    color: #a0a3a7;
+    font-size: 28px;
+}
+
+.connect span a{
+        padding-right: 20px;
+}
+.thong_tin i,.dien_anh i,.ho_tro i{
+    padding-right: 8px;
+}
+.fiter span i.face:hover{
+    color: #4267B2;
+}
+.fiter span i.youtu:hover{
+    color: #FF0000;
+}
+.fiter span i.install:hover{
+    color: #E35C9D;
+}
+.app  span i:hover{
+    color: white
+}
+.thong_tin ul li a:hover,.dien_anh ul li a:hover,.ho_tro ul li a:hover{
+
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .footer_url{
+        flex-direction: column;
+    }
+    .item{
+        padding-top: 30px;
+    }
+}

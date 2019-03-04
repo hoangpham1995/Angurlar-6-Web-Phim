@@ -1,0 +1,26 @@
+
+.form-control{
+    display: inline-block;
+}
+.table{
+    margin: 0px;
+}
+.bg_mau{
+    background-color: #F9F9F9!important;
+    line-height: 3;
+}
+.bg_nut{
+    background-color: #47251C;
+}
+.nut input{
+    margin: 0px 10px;
+}
+.nut span{
+    cursor: pointer;
+}
+.bg_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+

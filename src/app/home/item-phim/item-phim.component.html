@@ -1,0 +1,40 @@
+<div class="cards">
+    <div class="hinhanh">
+        <div class="img_hinhanh">
+                    <img [src]="ItemFim.HinhAnh" alt="" class="img-fluid">
+                    <div class="backgroud">
+                                <div class="wapper">
+                                                <a [href]="ItemFim.Trailer" data-autoplay="true" data-vbtype="video" class="venobox"  ><img src="../../../assets/img/play-video.png"  alt=""></a>  
+                                                           
+                                                <div class="buttionnut">
+                                                   
+                        
+                        
+                                                     <a class=" nut_bution" [routerLink]="['/chi-tiet',ItemFim.MaPhim]" >Mua Vé</a>
+                               
+                        
+                                                </div>
+                                </div>
+                    </div>
+               
+        </div>  
+ 
+      
+                
+
+            
+    </div>
+ 
+
+            <div class="tieude text-center">
+                    <h4>{{ItemFim.TenPhim}}</h4>
+                    <div class="review">
+                        <span><i class="fa fa-star"></i></span> 
+                        <span><i class="fa fa-star"></i></span>  
+                        <span><i class="fa fa-star"></i></span>      
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>         
+                    </div>
+                    <p>{{ItemFim.NgayKhoiChieu | date:'dd-MM'}}</p>
+            </div>
+</div>

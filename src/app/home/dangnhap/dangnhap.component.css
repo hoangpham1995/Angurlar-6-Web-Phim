@@ -1,0 +1,39 @@
+
+.btn-info{
+  padding: 12px 0px;
+}
+.form-control:focus{
+  box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
+}
+.form-control{
+  padding: 1.375rem .75rem;
+}
+span.icon_text{
+  background-color: #17A2B8;
+}
+.silder{
+  background: #c11827;
+  color: white;
+  padding: 10px 0px;  
+}
+
+  .forgot a {
+    color: #777777;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  .forgot {
+    text-align: left; margin-bottom:30px;
+  }
+  .meteria{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+  }
+  .resuing{
+    padding: 20px 0px;
+  }
+  .icon i{
+    font-size: 25px;
+  }
+

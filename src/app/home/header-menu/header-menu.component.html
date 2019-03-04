@@ -1,0 +1,74 @@
+
+<header class="nav_text">  
+  <nav class="navbar navbar-expand-lg  text-white   sidebarNavigation  menu " data-sidebarClass="navbar-light bg-light">
+  <div>
+      <img  src="../../../assets/img/logo-default.png" class="py-2 logo" alt="">
+  </div>
+
+
+  <button class="navbar-toggler NavbarToggler" type="button"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span ><i class="fa fa-list" style="color: white;font-size: 24px"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+
+      <li class="nav-item ">
+
+        <a class="nav-link" href="#">Lịch Chiếu </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cụm Rạp</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tin Tức</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tuyển Dụng</a>
+      </li>
+    
+    </ul>
+
+    
+    <ul class="nav navbar-nav navbar-right log " >
+
+      <li class="DN" *ngIf="dangnhapLG; else noidunghienthi " >
+        <a href="#" data-toggle="modal" data-target="#myDN"  >
+          <i class="fa fa-user "></i> Đăng Nhập</a>
+      </li>
+
+
+     <ng-template #noidunghienthi  >
+
+
+
+        <div class="dropdown">
+            <span class=" dropdown-toggle" style="cursor: pointer;"  data-toggle="dropdown">{{tennguoidung}}
+            <span class="caret"></span></span>
+            <ul class="dropdown-menu">
+               
+              <li style="text-align: center" ><a class="nut_bution" style=" " (click)="XoaLocal()"><i class="fa fa-sign-out mr-1"></i>Đăng Xuất</a></li>
+           
+            </ul>
+          </div>
+
+      </ng-template>
+
+
+
+
+
+      <li class="borders"></li>
+      
+      <li><a href="#" data-toggle="modal" data-target="#myDK"><i class="fa fa-sign-in"></i> Đăng Ký</a></li>
+    </ul>
+
+
+  </div>
+</nav>
+</header>
+
+
+
+<app-dangnhap></app-dangnhap>
+<app-dangky></app-dangky>

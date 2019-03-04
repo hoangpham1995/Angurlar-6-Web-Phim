@@ -1,0 +1,81 @@
+.homeTool{
+    display: block;
+    max-width: 940px;
+    margin: auto;
+    height: 80px;
+    position: relative;
+
+    width: 100%;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    z-index: 2;
+    background-color: #c11827;
+    font-weight: 700;
+    transform: translateY(-45px);
+  
+}
+
+.homeTool .whitd_werend{
+    width: 20%;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+.homeTool .whitd_werend .selectMenu{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 7%;
+    background-image: url('../../../assets/img/dropdown-icon.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+.homeTool .content_1::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 1px solid #fff;
+    border-right-color: rgba(238,238,238,.88);
+  
+}
+.btn_By{
+    outline: 0!important;
+    color: #ededed;
+    background: #d0021b;
+    border: 2px solid #f47d8c;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+    font-family: "SF Medium";
+    text-transform: uppercase;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 25px;
+   
+}
+.homeTool .white{
+    filter: brightness(0) invert(1);
+}
+@media (max-width:991px){
+    .homeTool{
+        display: none;
+    }
+}

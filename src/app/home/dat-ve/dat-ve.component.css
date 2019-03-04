@@ -1,0 +1,80 @@
+.wapper{
+    margin-top: 20px;
+    background: #F26B38;
+    padding: 20px;
+}
+.form-control{
+    display: inline-block;
+}
+.table{
+    margin: 0px;
+}
+.bg_mau{
+    background-color: #F9F9F9!important;
+    line-height: 3;
+}
+.bg_nut{
+    background-color: #47251C;
+}
+.nut input{
+    margin: 0px 10px;
+}
+.bg_text{
+    display: flex;
+    justify-content: space-between;
+}
+.thanhtoan{
+    margin: 50px 0px;
+    padding: 20px;;
+    background-color: #F1F1F1;
+
+}
+.times{
+    background-color: #c11827;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.times p {
+    padding: 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.degin p{
+    border-bottom: 1px solid #CED0DA;
+    padding-bottom: 10px;
+}
+
+.degin p:last-child{
+    border: none;
+}
+.datghe{
+    text-align: right;
+    margin: 20px 0px;
+}
+.datghe button{
+    width: 130px;
+    background-color: #C11827;
+    color: white;
+}
+.bg_menu ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+      
+}
+.bg_menu{
+    background-color: #4FC245;
+    height: 40px;
+    margin-top: 50px;
+
+}
+.bg_menu ul li{
+    list-style: none;
+    color: white;
+    line-height: 2.5;
+}

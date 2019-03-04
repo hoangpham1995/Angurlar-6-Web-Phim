@@ -1,0 +1,12 @@
+
+        <ng-container *ngIf="!itemghe.DaDat; else gheDaDuocSuDung">          
+                    <button class="btn  mr-3 mb-3 " [ngClass]="{'btn-success':status}" (click)="ChonGhe()" >{{itemghe.TenGhe}}</button>
+        </ng-container>
+
+
+        <ng-template #gheDaDuocSuDung>
+            <button class="btn btn-danger mr-3 mb-3" style="cursor: not-allowed">{{itemghe.TenGhe}}</button>
+        </ng-template>
+        
+ 
+   

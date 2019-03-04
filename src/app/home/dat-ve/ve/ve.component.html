@@ -1,0 +1,22 @@
+<table class="table table-striped">
+<thead>
+  <tr class="bg_nut text-white">
+    <th scope="col">Loại Vé</th>
+    <th scope="col">Số Lượng</th>
+    <th scope="col">Gía VNĐ</th>
+    <th scope="col">Tổng VNĐ</th>
+  </tr>
+</thead>
+<tbody>
+  <tr class="bg_mau" (tangsao)="MienTang($event)" (giamsao)="MienGiam($event)"  *ngFor="let itemve of LoaiVe" [dsve] = itemve app-item-ve >
+      
+   
+
+
+  </tr>
+
+
+
+
+</tbody>
+</table>

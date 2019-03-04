@@ -1,0 +1,135 @@
+<section class="title dark" style="background-color: rgb(10, 32, 41);">
+  <div class="banner">
+    <img [src]="ChiTietPhim.HinhAnh" alt=""  style="width: 100%;height: 600px">
+  </div>
+
+  <div class="backgroup"></div>
+
+  <div class="container">
+    <div class="movie_title">
+ <div class="row" >
+    <div class="col-md-6 col-xs-12 col-lg-6 ">
+        <div class="title_img">
+          <img [src]="ChiTietPhim.HinhAnh" alt="" class="img-fluid">
+      </div>
+
+    </div>
+
+    <div class="col-md-6 col-xs-12 col-lg-6">
+        <div class="title_decorate">
+            <h1 class="title_tieude">{{ChiTietPhim.TenPhim }}</h1>
+            <p class="age">
+                <a href="#">Độ Tuổi</a>
+                 Don Hall, Chris Williams
+            </p>
+            <p class="review">Xếp Hạng	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;<span class="review">
+                <span><i class="fa fa-star"></i></span>  
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>   
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>         
+        </span></p> 
+          
+            <p class="review reviewgo">Thể Loại	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Animation, Action, Comedy</p>
+            <p class="review">Ngày Sản Xuất &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp; {{ChiTietPhim.NgayKhoiChieu | date:'dd-MM-yyyy'}}</p>
+            <p class="special">{{ChiTietPhim.MoTa}}</p>
+            <div class="nut_butoin">
+            <a class="video venobox" [href]="ChiTietPhim.Trailer" data-autoplay="true" data-vbtype="video" > <i class="video1 "></i>XEM TRAILER</a>
+            <a class="book" href="#"><i class="book1"></i>Đặt Vé </a>
+            </div>
+     
+          </div>
+    </div>
+
+
+
+  </div>
+    </div>
+   
+
+  </div>
+
+</section>
+
+
+<section class="decoration">
+    <div class="container-fluid darks" >
+      <div class="row" style="margin: 0px;" >
+          <div class="col-8 mx-auto" >
+              <h4 style="color: white;padding: 20px 0px;border-bottom: 2px solid #42af33;text-align: center">Lịch Chiếu</h4>
+  
+          </div>
+  
+<!--   
+          <div class="col-8 mx-auto">
+              <div class="day">
+        
+                  <ul class="day_content">
+                      <li> <a href="" class="active"> Thứ 2 <p>24/6</p></a></li>
+                      <li> <a href=""> Thứ 3 <p>24/6</p></a></li>
+                      <li> <a href=""> Thứ 4 <p>24/6</p></a></li>
+                      <li> <a href=""> Thứ 5 <p>24/6</p></a></li>
+                      <li> <a href=""> Thứ 6 <p>24/6</p></a></li>
+                      <li> <a href=""> Thứ 7 <p>24/6</p></a></li>
+                      <li> <a href=""> Chủ Nhật <p>24/6</p></a></li>
+                  </ul>
+              </div>
+   
+          </div> -->
+  
+          <div class="col-8  mx-auto" >
+              <div class="box" *ngFor="let lichchieu of ChiTietPhim.LichChieu"   >
+
+                     
+                    <div class="day" style="color: red;align-items: center;display: flex">
+                            <h4>{{lichchieu.NgayChieuGioChieu| date:'dd-MM'}}</h4>
+                          </div>
+                            <div class="box_link">
+                                <h4>GaLaXy Cộng Hòa</h4>
+                                <p style="font-size: 14px;color: black">Lau 5, Sieu Thi Vincom 3/2, 3C Duong 3/2, Quan 10</p>
+                                <a href=""><i class="fa fa-map-marker mr-2"></i>Xem Vị Trí</a>
+                            </div>
+        
+                            <div class="mai" style="padding: 0px 40px;">
+                                <h2>2D</h2>
+                                <p class="fim-class">C{{lichchieu.MaLichChieu}}</p>
+                            </div>
+       
+                            <div class="buttion"  >
+            
+                                <div class="buttoin_day">
+                                 <ul >
+                                     <li ><a (click)="test(lichchieu)"   style="cursor: pointer;"   >
+                                    
+                                        
+                                        {{lichchieu.NgayChieuGioChieu | date: 'hh:mm'}}
+                                    
+                                    
+                                    </a></li>
+                
+                                 </ul>
+         
+                                </div>
+                            </div>
+            
+
+              </div>
+  
+  
+              
+          </div>
+  
+  
+  
+      </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+

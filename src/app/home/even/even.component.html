@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <div class="imge " style="padding-bottom: 80px;">
+        <img src="../../../assets/img/hp.png" alt="" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="even">
+      <ul class="even_1">
+        <button class="btn " (click)="ChonLoaiTin('KhuyenMai')"  [ngClass]="{'danger':LoaiTinTuc === 'KhuyenMai'}" >
+       
+       Khuyến Mãi
+        </button>
+        <button class="btn " (click)="ChonLoaiTin('TinTuc')" [ngClass]="{'danger':LoaiTinTuc === 'TinTuc'}" >
+        Tin Tức 
+       
+        </button>
+        <button class="btn "  (click)="ChonLoaiTin('SuKien')" [ngClass]="{'danger':LoaiTinTuc === 'SuKien'}">
+        
+        Sự Kiện
+         
+        </button>
+      </ul>
+    </div>
+  </div>
+
+  <div  [ngSwitch]="LoaiTinTuc"  >
+    <div *ngSwitchCase ="'KhuyenMai'" >
+      <app-khuyenmai *ngIf='LoaiTinTuc === "KhuyenMai"' ></app-khuyenmai>
+    </div>
+
+       <div *ngSwitchCase="'TinTuc'" >
+       <app-tintuc *ngIf='LoaiTinTuc === "TinTuc"'></app-tintuc>
+    </div>
+
+ 
+ 
+  <div *ngSwitchCase="'SuKien'">
+       <app-sukien *ngIf='LoaiTinTuc === "SuKien"'></app-sukien> 
+  </div>
+
+ 
+  
+ 
+  </div>
+  
+
+
+</div>

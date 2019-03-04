@@ -1,0 +1,130 @@
+.hinhanh{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+
+.img_hinhanh:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+
+}
+
+
+.hinhanh img{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 400px;
+  
+}
+  .backgroud{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.58);
+    height: 100%;
+    opacity: 0;
+    border-radius: 10px  ;
+    -webkit-border-radius: 10px  ;
+    -moz-border-radius: 10px  ;
+    -ms-border-radius: 10px  ;
+    -o-border-radius: 10px  ;
+}
+  .backgroud:hover{
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+  .wapper{
+    text-align: center;
+  }
+  .wapper img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    background: 0 0;
+    border: none;
+  }
+  .buttionnut{
+      padding-bottom: 10px;
+      position: absolute;
+      top: 65%;
+      width: 100%;
+
+}
+
+  .review{
+    color: #f9be30;
+  }
+  
+  .buttionnut  a.nut_bution{
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+    text-decoration: none;
+  } 
+  .buttionnut  a.nut_bution:hover{
+      background-color: #c11827;
+      border: none;
+      transition: 0,5s  ;
+      -webkit-transition: 0,5s  ;
+      -moz-transition: 0,5s  ;
+      -ms-transition: 0,5s  ;
+      -o-transition: 0,5s  ;
+}
+  .tieude h4{
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 576px){
+    .tieude h4{
+      font-size: 16px;
+    }
+
+    .wapper img{
+      width: 30px;
+      height: 30px;
+  
+
+    }
+    .buttionnut{
+      top: 80%;
+    }
+    .buttionnut button{
+      padding: 0px 5px;
+      font-size: 8px;
+      margin: 0px 1%;
+      
+    
+}
+
+.mat-raised-button{
+  min-width: 34px;
+  line-height: 20px;
+  
+}
+
+
+  }

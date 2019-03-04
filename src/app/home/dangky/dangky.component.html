@@ -1,0 +1,122 @@
+
+
+<form #formDK="ngForm" (ngSubmit)="dangky(formDK)">
+
+  <!-- Modal -->
+   <div class="modal fade" id="myDK" role="dialog">
+       <div class="modal-dialog">
+         <!-- Modal content-->
+         <div class="modal-content">
+
+
+           <div class="modal-header">
+ 
+             <h4 class="modal-title">Đăng Ký</h4>
+        
+             <button type="button" class="close" data-dismiss="modal" >&times;</button>
+           </div>
+     
+
+
+           <div class="pad" style="padding: 20px">
+
+              <div class="form-group">
+                  <input #taiKhoan="ngModel" minlength="6" maxlength="15"  type="text" class="form-input" name="TaiKhoan"  placeholder="Tài Khoản" ngModel required [pattern]='"^[a-z0-9_-]{1,16}$"'/>
+                  <div *ngIf="taiKhoan.errors && (taiKhoan.touched || taiKhoan.dirty  )">
+                      <div class="warning pt-2">
+                 
+                    <div class=" alert alert-danger" *ngIf="taiKhoan.errors.pattern" >Tên đăng nhập chỉ chứa các kí tự cho phép gồm: chữ in hoa, chữ in thường, chữ số (a-z, A-Z, 0-9), dấu gạch dưới, dấu gạch ngang và dấu chấm. Tên đăng nhập phải bắt đầu hoặc kết thúc bằng chữ cái hoặc chữ số và phải chứa ít nhất một chữ cái.</div>
+                  </div>
+                      </div>
+                  
+              </div>
+            
+              <!-- Mật Khẩu -->
+              <div class="form-group">
+                  <input #matKhau="ngModel"  type="password" class="form-input" name="MatKhau" id="password" placeholder="Mật Khẩu" ngModel required [pattern]='"^(?=.*[0-9])(?=.*[a-z])(?=\\S+$).{8,}$"'>
+
+
+                  <span toggle="#password" class="fa fa-eye field-icon toggle-password"></span>
+              
+                         <div *ngIf="matKhau.errors && (matKhau.touched || matKhau.dirty ) ">
+
+                    <div class="warning pt-2">
+                     
+
+                        <div class=" alert alert-danger" *ngIf="matKhau.errors.pattern" >Mật khẩu phải đảm bảo: độ dài 8-16 ký tự, có ít nhất 1 chữ cái (a-z hoặc A-Z) và 1 chữ số, và không giống với tên tài khoản</div>
+                      </div>
+                  </div>
+
+               
+
+
+              </div>
+              <div class="form-group">
+                  <input  #matKhaudetail="ngModel" type="password" class="form-input" name="MatKhaupass" id="re_password" placeholder="Xác Nhận Mật Khẩu" ngModel [ngClass]="{'ng-valid':!(matKhau.value != matKhaudetail.value)}"/>
+                  <span toggle="#re_password" class="fa fa-eye field-icon toggle-password"></span>
+                  <div *ngIf="matKhau.errors && (matKhau.untouched || matKhau.dirty) && matKhaudetail.errors || matKhau.value != matKhaudetail.value">   
+                        <div class="warning pt-2">
+                 <div class=" alert alert-danger" *ngIf="matKhau.value != matKhaudetail.value" >Mật Khẩu không trùng</div>
+                </div>
+            </div>
+
+              </div>
+
+
+
+
+              <div class="form-group">
+                <input #eMail="ngModel" type="email" class="form-input" name="email" id="email" placeholder="Email" ngModel required />
+
+
+                    <div *ngIf="eMail.errors && (eMail.touched || eMail.dirty  ) ">
+                        
+                    </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <input #hoTen="ngModel" type="text" class="form-input" name="Hoten" id="hoten" placeholder="Họ Tên" ngModel [pattern]='"^[a-zA-Z_ÀÁÂÃÈÉÊẾÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶ" +
+                "ẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềếểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợ" +
+                "ụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\\s]+$"' required>
+
+                <div *ngIf="hoTen.errors && (hoTen.touched || hoTen.dirty  )">
+                        <div class="warning pt-2">
+                      
+                        <div class=" alert alert-danger" *ngIf="hoTen.errors.pattern" >Họ và Tên Không Hợp Lệ</div>
+                </div>
+            </div>
+        </div>
+
+            <div class="form-group">
+                <input #soDT="ngModel" type="text" class="form-input" name="SoDT" id="sdt" placeholder="Điện Thoại" ngModel required />
+                <div *ngIf="soDT.errors && (soDT.touched || soDT.dirty  )">
+                <div class="warning pt-2">
+                 
+                </div>
+            </div>
+        </div>
+
+
+
+
+              <mat-checkbox #ghinho ="ngModel" color="primary" name="GN" ngModel  >Xác Nhận Điều Khoản </mat-checkbox>
+
+              <button type="submit" name="submit" id="submit" [disabled]="formDK.invalid" class="btn form-submit my-3">Đăng Ký</button>
+      
+                <p class="text-center" style="color:red">{{thongBao}}</p>
+
+                <p class="text-center" style="color:red">{{message}}</p>
+
+
+              <p class="loginhere">
+                  Bạn Có Tài Khoản  ? <a href="#" class="loginhere-link"  data-dismiss="modal"  data-toggle="modal" data-target="#myDN">Đăng Nhập</a>
+              </p>
+         
+           </div>
+         </div>
+       </div>
+     </div>
+ </form>
+

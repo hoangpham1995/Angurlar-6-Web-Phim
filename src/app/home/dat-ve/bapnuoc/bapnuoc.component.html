@@ -1,0 +1,32 @@
+<table class="table table-striped">
+  <thead>
+    <tr class="bg_nut text-white">
+      <th scope="col">Combo</th>
+      <th scope="col">Số Lượng</th>
+      <th scope="col">Gía VNĐ</th>
+      <th scope="col">Tổng VNĐ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="bg_mau" *ngFor="let bap of DanhsachCombo" [dsbap] = bap (sapgiambap)="MienGiam($event)" (saptangbap)="MienTang($event)"  app-item-bap >
+     
+    </tr>
+
+   <tr style="background-color: #F9F9F9">
+  
+   
+    <td style="font-size:18px;color: red" class="font-weight-bold" >Tổng Tiền:</td>
+    <td style="font-size:18px;color: red" class="font-weight-bold">{{totalAmout}}VNĐ</td>
+    <td></td>
+    <td></td>
+   </tr>
+   
+ 
+ 
+
+   
+
+
+
+  </tbody>
+</table>

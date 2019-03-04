@@ -1,0 +1,105 @@
+
+.logo{
+    width: 80%;
+}
+.menu{
+    background: #c11827; 
+    color: white;
+}
+.log .under:hover{
+    text-decoration: underline;
+}
+
+.dropdown-menu{
+    min-width: 6rem;
+}
+.dropdown-menu li a.nut_bution{
+    color: #a0a3a7;font-size: 14px;font-weight: 500;cursor: pointer;
+}
+.dropdown-menu li a.nut_bution:hover{
+    color: #c11827
+}
+a.nav-link {
+    color: white;
+}
+button:focus{
+    outline: none;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+
+.log  li a{
+    text-decoration: none;
+    color: white;
+}
+.borders{
+    width: 2px;
+    height: 30px;
+    background: white;
+    margin: 0px 10px;
+}
+.sideMenu{
+    top: 70px;
+  
+}
+
+span.log_in{
+    font-size: 18px;text-transform: capitalize
+}
+
+@media (max-width:991px){
+    .log .DN{
+        display: none;
+    }
+
+ 
+    .og_link{
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+       
+    }
+    .log  li a{
+        color: white;
+        width: 140px;
+        height: 40px;
+        margin-top: 15px;
+        background: #c11827;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+       
+    }
+    .log  li a:hover{
+        background: #dfb636;
+        transition: 0.5s    ;
+        -webkit-transition: 0.5s    ;
+        -moz-transition: 0.5s    ;
+        -ms-transition: 0.5s    ;
+        -o-transition: 0.5s    ;
+} 
+
+     .log  li i{
+        display: none;
+    }
+    .log{
+        margin-top: 20px;
+    }
+
+    .borders{
+        display: none;
+    }
+    a.nav-link{
+        font-size: 20px;
+    }
+
+
+
+  .log li a.og_list_style{
+        display: none;
+    }
+
+}

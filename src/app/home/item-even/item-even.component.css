@@ -1,0 +1,22 @@
+.dienanh img {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.dienanh a.nut_a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px; 
+}
+.dienanh a p{
+    padding-top: 10px;
+}
+.dienanh  p.nut_p{
+    font-size: 13px;
+}
+.dienanh a:hover{
+    color: red;
+}
